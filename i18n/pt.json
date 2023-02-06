@@ -1,7 +1,7 @@
 {
   "arduino": {
     "about": {
-      "detail": "Versão: {0}\nData: {1}{2}\nVersão do CLI : {3}{4} [{5}]\n\n{6}",
+      "detail": "Version: {0}\nDate: {1}{2}\nCLI Version: {3}\n\n{4}",
       "label": "Sobre {0}"
     },
     "board": {
@@ -157,6 +157,11 @@
       "uninstallMsg": "Deseja desinstalar {0}?",
       "version": "Versão {0}"
     },
+    "configuration": {
+      "cli": {
+        "inaccessibleDirectory": "Could not access the sketchbook location at '{0}': {1}"
+      }
+    },
     "contributions": {
       "addFile": "Adicionar Arquivo",
       "fileAdded": "Um arquivo adicionado ao sketch.",
@@ -186,7 +191,8 @@
       "debugWithMessage": "Depuração - {0}",
       "debuggingNotSupported": "A depuração não é suportada por '{0}'",
       "noPlatformInstalledFor": "A plataforma não está instalada para '{0}'",
-      "optimizeForDebugging": "Otimizar para Depuração"
+      "optimizeForDebugging": "Otimizar para Depuração",
+      "sketchIsNotCompiled": "Sketch '{0}' must be verified before starting a debug session. Please verify the sketch and start debugging again. Do you want to verify the sketch now?"
     },
     "dialog": {
       "dontAskAgain": "Não perguntar novamente"
@@ -333,7 +339,7 @@
       "cloud.sketchSyncEndpoint": "O endpoint usado para enviar e baixar os sketches de um backend. Por padrão, ele aponta para a Arduino Cloud API.",
       "compile": "compilar",
       "compile.experimental": "Verdadeiro se o IDE deve trabalhar com múltiplos erros de compilação. Falso por padrão",
-      "compile.revealRange": "Ajusta como os erros do compilador são revelados no editor após uma falha na verificação/upload. Valores possíveis: 'auto': Role verticalmente conforme necessário e revele uma linha. 'center': Role verticalmente conforme necessário e revele uma linha centralizada verticalmente. 'top': Role verticalmente conforme necessário e revele uma linha próxima ao topo da janela de visualização, otimizada para visualizar uma definição de código. 'centerIfOutsideViewport': Role verticalmente conforme necessário e revele uma linha centralizada verticalmente somente se estiver fora da viewport. O valor padrão é ' {0}'.",
+      "compile.revealRange": "Ajusta como os erros do compilador são revelados no editor após uma falha na verificação/upload. Valores possíveis: 'auto': Role verticalmente conforme necessário e revele uma linha. 'center': Role verticalmente conforme necessário e revele uma linha centralizada verticalmente. 'top': Role verticalmente conforme necessário e revele uma linha próxima ao topo da janela de visualização, otimizada para visualizar uma definição de código. 'centerIfOutsideViewport': Role verticalmente conforme necessário e revele uma linha centralizada verticalmente somente se estiver fora da viewport. O valor padrão é '{0}'.",
       "compile.verbose": "Verdadeiro para saída de compilação detalhada. Falso é padrão",
       "compile.warnings": "Diz ao gcc qual nível de aviso usar. 'Nenhum' é padrão",
       "compilerWarnings": "Avisos do compilador",
@@ -352,6 +358,7 @@
       "manualProxy": "Configurações manuais de proxy",
       "network": "Rede",
       "newSketchbookLocation": "Escolher",
+      "noCliConfig": "Could not load the CLI configuration",
       "noProxy": "Sem proxy",
       "proxySettings": {
         "hostname": "Host name",
@@ -453,7 +460,7 @@
       "quitTitle": "Você tem certeza que quer sair?"
     },
     "editor": {
-      "unsavedTitle": "Não salvo – \"1{0}\""
+      "unsavedTitle": "Sem Nome – {0}"
     },
     "messages": {
       "collapse": "Recolher",

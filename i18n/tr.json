@@ -1,7 +1,7 @@
 {
   "arduino": {
     "about": {
-      "detail": "Versiyon: {0}\nDate: {1}{2}\nCLI Versiyonu: {3}{4} [{5}]\n\n{6}",
+      "detail": "Versiyon: {0}\nTarih: {1}{2}\nCLI Versiyonu: {3}\n\n{4}",
       "label": "{0} Hakkında"
     },
     "board": {
@@ -157,6 +157,11 @@
       "uninstallMsg": "{0} kaldırılsın mı?",
       "version": "Versiyon {0}"
     },
+    "configuration": {
+      "cli": {
+        "inaccessibleDirectory": "'{0}': {1} konumundaki eskiz defterine erişilemedi"
+      }
+    },
     "contributions": {
       "addFile": "Dosya Ekle",
       "fileAdded": "Eskize bir dosya eklendi.",
@@ -186,7 +191,8 @@
       "debugWithMessage": "Debug - {0}",
       "debuggingNotSupported": "Debug '{0}' tarafından desteklenmiyor",
       "noPlatformInstalledFor": "'{0}' için platform kurulmadı",
-      "optimizeForDebugging": "Debug için Optimize et"
+      "optimizeForDebugging": "Debug için Optimize et",
+      "sketchIsNotCompiled": "Hata ayıklama -debug- oturumuna başlamadan önce '{0}' eskizi doğrulanmalıdır. Lütfen eskizi doğrulayın ve hata ayıklamayı yeniden başlatın. Eskizi şimdi doğrulamak ister misiniz?"
     },
     "dialog": {
       "dontAskAgain": "Tekrar sorma"
@@ -352,6 +358,7 @@
       "manualProxy": "Elle vekil ayarlama",
       "network": "Ağ",
       "newSketchbookLocation": "Yeni eskiz defteri konumu seç",
+      "noCliConfig": "CLI yapılandırması yüklenemedi",
       "noProxy": "Vekil yok",
       "proxySettings": {
         "hostname": "Host adı",
@@ -462,7 +469,7 @@
     "workspace": {
       "deleteCurrentSketch": "Mevcut eskizi silmek istiyor musunuz?",
       "fileNewName": "Yeni dosya için isim",
-      "invalidExtension": ".{0}  geçerli bir uzantı değil",
+      "invalidExtension": ".{0} geçerli bir uzantı değil",
       "invalidFilename": "Hatalı dosya adı.",
       "newFileName": "Dosya için yeni isim"
     }

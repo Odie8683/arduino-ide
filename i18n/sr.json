@@ -1,7 +1,7 @@
 {
   "arduino": {
     "about": {
-      "detail": "Верзија: {0}\nДатум: {1}{2}\nCLI верзија: {3}{4} [{5}]\n\n{6}",
+      "detail": "Version: {0}\nDate: {1}{2}\nCLI Version: {3}\n\n{4}",
       "label": "О {0}"
     },
     "board": {
@@ -157,6 +157,11 @@
       "uninstallMsg": "Да ли желиш да деинсталираш {0}? ",
       "version": "Верзија {0}"
     },
+    "configuration": {
+      "cli": {
+        "inaccessibleDirectory": "Could not access the sketchbook location at '{0}': {1}"
+      }
+    },
     "contributions": {
       "addFile": "Додај датотеку",
       "fileAdded": "Датотека је додата у рад.",
@@ -186,7 +191,8 @@
       "debugWithMessage": "Отклањање грешака - {0}",
       "debuggingNotSupported": "'{0}' не подржава отклањање грешака",
       "noPlatformInstalledFor": "Платформа није инсталирана за '{0}'",
-      "optimizeForDebugging": "Оптимизовано за отклањање грешака"
+      "optimizeForDebugging": "Оптимизовано за отклањање грешака",
+      "sketchIsNotCompiled": "Sketch '{0}' must be verified before starting a debug session. Please verify the sketch and start debugging again. Do you want to verify the sketch now?"
     },
     "dialog": {
       "dontAskAgain": "Не питај поново"
@@ -352,6 +358,7 @@
       "manualProxy": "Ручно подешавање посредника",
       "network": "Мрежа",
       "newSketchbookLocation": "Одабери нову локацију радне свеске",
+      "noCliConfig": "Could not load the CLI configuration",
       "noProxy": "Без посредника",
       "proxySettings": {
         "hostname": "Host name",

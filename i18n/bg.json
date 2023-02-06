@@ -1,7 +1,7 @@
 {
   "arduino": {
     "about": {
-      "detail": "Версия: {0}\nДата: {1}{2}\nВерсия на CLI: {3}{4} [{5}]\n\n{6}",
+      "detail": "Version: {0}\nDate: {1}{2}\nCLI Version: {3}\n\n{4}",
       "label": "Относно {0}"
     },
     "board": {
@@ -157,6 +157,11 @@
       "uninstallMsg": "Искате ли да деинсталирате {0}?",
       "version": "Версия {0}"
     },
+    "configuration": {
+      "cli": {
+        "inaccessibleDirectory": "Could not access the sketchbook location at '{0}': {1}"
+      }
+    },
     "contributions": {
       "addFile": "Добави файл",
       "fileAdded": "Към скицата е добавен един файл.",
@@ -186,7 +191,8 @@
       "debugWithMessage": "Отстраняване на грешки - {0}",
       "debuggingNotSupported": "Отстраняването на грешки не се поддържа от „{0}“",
       "noPlatformInstalledFor": "Платформата не е инсталирана за „{0}“",
-      "optimizeForDebugging": "Оптимизиране за отстраняване на грешки"
+      "optimizeForDebugging": "Оптимизиране за отстраняване на грешки",
+      "sketchIsNotCompiled": "Sketch '{0}' must be verified before starting a debug session. Please verify the sketch and start debugging again. Do you want to verify the sketch now?"
     },
     "dialog": {
       "dontAskAgain": "Не питай отново"
@@ -352,6 +358,7 @@
       "manualProxy": "Ръчна конфигурация на прокси",
       "network": "Мрежа",
       "newSketchbookLocation": "Изберете местоположение за новата скицниката",
+      "noCliConfig": "Could not load the CLI configuration",
       "noProxy": "Без прокси",
       "proxySettings": {
         "hostname": "Host name",

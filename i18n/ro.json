@@ -1,7 +1,7 @@
 {
   "arduino": {
     "about": {
-      "detail": "Versiunea: {0}\nData: {1}{2}\nVersiunea CLI : {3}{4} [{5}]\n\n{6}",
+      "detail": "Version: {0}\nDate: {1}{2}\nCLI Version: {3}\n\n{4}",
       "label": "Despre {0}"
     },
     "board": {
@@ -157,6 +157,11 @@
       "uninstallMsg": "Dorești să dezinstalezi {0}?",
       "version": "Versiunea {0}"
     },
+    "configuration": {
+      "cli": {
+        "inaccessibleDirectory": "Could not access the sketchbook location at '{0}': {1}"
+      }
+    },
     "contributions": {
       "addFile": "Adaugă Fișier",
       "fileAdded": "One file added to the sketch.",
@@ -186,7 +191,8 @@
       "debugWithMessage": "Depanare - {0}",
       "debuggingNotSupported": "Depanarea nu este suportată de '{0}'",
       "noPlatformInstalledFor": "Platforma nu este instalată pentru '{0}'",
-      "optimizeForDebugging": "Optimizare pentru depanare"
+      "optimizeForDebugging": "Optimizare pentru depanare",
+      "sketchIsNotCompiled": "Sketch '{0}' must be verified before starting a debug session. Please verify the sketch and start debugging again. Do you want to verify the sketch now?"
     },
     "dialog": {
       "dontAskAgain": "Nu mai întreba"
@@ -352,6 +358,7 @@
       "manualProxy": "Configurare manuală proxy",
       "network": "Rețea",
       "newSketchbookLocation": "Select new sketchbook location",
+      "noCliConfig": "Could not load the CLI configuration",
       "noProxy": "Fără proxy",
       "proxySettings": {
         "hostname": "Host name",

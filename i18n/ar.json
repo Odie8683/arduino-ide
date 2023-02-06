@@ -1,7 +1,7 @@
 {
   "arduino": {
     "about": {
-      "detail": "النسخة : {0}\nالتاريخ : {1} {2} \nنسخة موجه سطر الاوامر CLI {3}{4} [{5}] \n{6}",
+      "detail": "Version: {0}\nDate: {1}{2}\nCLI Version: {3}\n\n{4}",
       "label": "حول {0}"
     },
     "board": {
@@ -157,6 +157,11 @@
       "uninstallMsg": "هل تريد الغاء تثبيت {0}؟",
       "version": "النسخة {0}"
     },
+    "configuration": {
+      "cli": {
+        "inaccessibleDirectory": "Could not access the sketchbook location at '{0}': {1}"
+      }
+    },
     "contributions": {
       "addFile": "اضف ملف...",
       "fileAdded": "تمت اضافة ملف واحد الى المشروع",
@@ -186,7 +191,8 @@
       "debugWithMessage": "تصحيح برمجي - {0}",
       "debuggingNotSupported": "'{0}' لا يقبل التصحيح البرمجي",
       "noPlatformInstalledFor": "المنصة غير مثبتة ل '{0}'",
-      "optimizeForDebugging": "التحسين من اجل التصحيح البرمجي"
+      "optimizeForDebugging": "التحسين من اجل التصحيح البرمجي",
+      "sketchIsNotCompiled": "Sketch '{0}' must be verified before starting a debug session. Please verify the sketch and start debugging again. Do you want to verify the sketch now?"
     },
     "dialog": {
       "dontAskAgain": "لا تسأل مرة اخرى"
@@ -352,6 +358,7 @@
       "manualProxy": "اعدادات الوكيل يدوياً",
       "network": "شبكة",
       "newSketchbookLocation": "اختر مكان المشروع الجديد",
+      "noCliConfig": "Could not load the CLI configuration",
       "noProxy": "لا يوجد وكيل",
       "proxySettings": {
         "hostname": "Host name",

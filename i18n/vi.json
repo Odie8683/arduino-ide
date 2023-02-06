@@ -1,7 +1,7 @@
 {
   "arduino": {
     "about": {
-      "detail": "Phiên bản: {0}\nNgày: {1}{2}\nPhiên bản CLI: {3}{4} [{5}]\n\n{6}",
+      "detail": "Version: {0}\nDate: {1}{2}\nCLI Version: {3}\n\n{4}",
       "label": "Về {0}"
     },
     "board": {
@@ -157,6 +157,11 @@
       "uninstallMsg": "Bạn có muốn gỡ cài đặt {0}?",
       "version": "Phiên bản {0}"
     },
+    "configuration": {
+      "cli": {
+        "inaccessibleDirectory": "Could not access the sketchbook location at '{0}': {1}"
+      }
+    },
     "contributions": {
       "addFile": "Thêm tệp...",
       "fileAdded": "Một tệp đã được thêm vào sketch.",
@@ -186,7 +191,8 @@
       "debugWithMessage": "Sửa lỗi - {0}",
       "debuggingNotSupported": "Sửa lỗi không hỗ trợ bởi '{0}'",
       "noPlatformInstalledFor": "Nền tảng chưa được cài đặt cho '{0}'",
-      "optimizeForDebugging": "Tối ưu hóa cho sửa lỗi"
+      "optimizeForDebugging": "Tối ưu hóa cho sửa lỗi",
+      "sketchIsNotCompiled": "Sketch '{0}' must be verified before starting a debug session. Please verify the sketch and start debugging again. Do you want to verify the sketch now?"
     },
     "dialog": {
       "dontAskAgain": "Đừng hỏi lại"
@@ -352,6 +358,7 @@
       "manualProxy": "Cấu hình proxy thủ công",
       "network": "Mạng",
       "newSketchbookLocation": "Chọn địa điểm lưu sketchbook mới",
+      "noCliConfig": "Could not load the CLI configuration",
       "noProxy": "Không có proxy",
       "proxySettings": {
         "hostname": "Host name",

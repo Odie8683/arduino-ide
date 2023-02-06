@@ -1,7 +1,7 @@
 {
   "arduino": {
     "about": {
-      "detail": "نسخه :{0}\nتاریخ: {1} {2}\nنسخه CLI : {3}{4} [{5}]\n\n{6}",
+      "detail": "Version: {0}\nDate: {1}{2}\nCLI Version: {3}\n\n{4}",
       "label": "درباره {0}"
     },
     "board": {
@@ -157,6 +157,11 @@
       "uninstallMsg": "آیا شما می خواهید {0} را لغو نصب کنید؟",
       "version": "ورژن {0}"
     },
+    "configuration": {
+      "cli": {
+        "inaccessibleDirectory": "Could not access the sketchbook location at '{0}': {1}"
+      }
+    },
     "contributions": {
       "addFile": "فایل اظافه کن",
       "fileAdded": "یک فایل به طرح افزوده شد.",
@@ -186,7 +191,8 @@
       "debugWithMessage": "رفع خطا {0}",
       "debuggingNotSupported": "رفع خطا توسط {0} پشتیبانی نمی شود.",
       "noPlatformInstalledFor": "دستگاه مورد نظر برای {0} نصب نشده است",
-      "optimizeForDebugging": "بهینه کردن برای رفع خطا"
+      "optimizeForDebugging": "بهینه کردن برای رفع خطا",
+      "sketchIsNotCompiled": "Sketch '{0}' must be verified before starting a debug session. Please verify the sketch and start debugging again. Do you want to verify the sketch now?"
     },
     "dialog": {
       "dontAskAgain": "نمی تواند بپرسد."
@@ -352,6 +358,7 @@
       "manualProxy": "پیکربندی دستی پروکسی",
       "network": "نتورک",
       "newSketchbookLocation": "مکان جدید منبع طرح ها را مشخص کنید",
+      "noCliConfig": "Could not load the CLI configuration",
       "noProxy": "بدون پروکسی",
       "proxySettings": {
         "hostname": "نام میزبان",

@@ -1,7 +1,7 @@
 {
   "arduino": {
     "about": {
-      "detail": "Bertsioa: {0}\nData: {1}{2}\nCLI bertsioa: {3}{4} [{5}]\n\n{6}",
+      "detail": "Version: {0}\nDate: {1}{2}\nCLI Version: {3}\n\n{4}",
       "label": "{0}ri buruz"
     },
     "board": {
@@ -157,6 +157,11 @@
       "uninstallMsg": "{0} desinstalatu nahi duzu?",
       "version": "{0} bertsioa"
     },
+    "configuration": {
+      "cli": {
+        "inaccessibleDirectory": "Could not access the sketchbook location at '{0}': {1}"
+      }
+    },
     "contributions": {
       "addFile": "Gehitu fitxategia",
       "fileAdded": "Fitxategi bat gehitu da programara.",
@@ -186,7 +191,8 @@
       "debugWithMessage": "Araztu - {0}",
       "debuggingNotSupported": "Ez dauka arazketarako euskarririk: '{0}'",
       "noPlatformInstalledFor": "Plataforma ez dago instalatuta honentzat: '{0}'",
-      "optimizeForDebugging": "Optimizatu arazketarako"
+      "optimizeForDebugging": "Optimizatu arazketarako",
+      "sketchIsNotCompiled": "Sketch '{0}' must be verified before starting a debug session. Please verify the sketch and start debugging again. Do you want to verify the sketch now?"
     },
     "dialog": {
       "dontAskAgain": "Ez galdetu berriro"
@@ -352,6 +358,7 @@
       "manualProxy": "Proxyaren eskuzko konfigurazioa",
       "network": "Sarea",
       "newSketchbookLocation": "Hautatu programa bilduma berriaren kokalekua",
+      "noCliConfig": "Could not load the CLI configuration",
       "noProxy": "Proxyrik ez",
       "proxySettings": {
         "hostname": "Host name",

@@ -1,7 +1,7 @@
 {
   "arduino": {
     "about": {
-      "detail": "Version: {0}\nDate: {1}{2}\nCLI Version: {3}{4} [{5}]\n\n{6}",
+      "detail": "Version: {0}\nDate: {1}{2}\nCLI Version: {3}\n\n{4}",
       "label": "Σχετικά με {0}"
     },
     "board": {
@@ -157,6 +157,11 @@
       "uninstallMsg": "Do you want to uninstall {0}?",
       "version": "Έκδοση {0}"
     },
+    "configuration": {
+      "cli": {
+        "inaccessibleDirectory": "Could not access the sketchbook location at '{0}': {1}"
+      }
+    },
     "contributions": {
       "addFile": "Προσθήκη αρχείου",
       "fileAdded": "Ένα αρχείο προστέθηκε στον κώδικα.",
@@ -186,7 +191,8 @@
       "debugWithMessage": "Αποσφαλμάτωση - {0}",
       "debuggingNotSupported": "Δεν υποστιρίζεται αποσφαλμάτωση από '{0}'",
       "noPlatformInstalledFor": "Δεν έχει εγκατασταθεί πλατφόρμα για '{0}'",
-      "optimizeForDebugging": "Βελτιστοποίηση για Αποσφαλμάτωση"
+      "optimizeForDebugging": "Βελτιστοποίηση για Αποσφαλμάτωση",
+      "sketchIsNotCompiled": "Sketch '{0}' must be verified before starting a debug session. Please verify the sketch and start debugging again. Do you want to verify the sketch now?"
     },
     "dialog": {
       "dontAskAgain": "Don't ask again"
@@ -352,6 +358,7 @@
       "manualProxy": "Manual proxy configuration",
       "network": "Δίκτυο",
       "newSketchbookLocation": "Επιλογή νέας τοποθεσίας σχεδίων",
+      "noCliConfig": "Could not load the CLI configuration",
       "noProxy": "No proxy",
       "proxySettings": {
         "hostname": "Host name",
